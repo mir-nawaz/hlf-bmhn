@@ -1,0 +1,6 @@
+network/setup/temp/*
+gocc/bin/govendor/*
+gocc/pkg/linux_amd64/*
+gocc/src/github.com/*
+gocc/src/testing/*
+gocc/src/token/*

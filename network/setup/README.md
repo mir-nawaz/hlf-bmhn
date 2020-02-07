@@ -1,51 +1,43 @@
-# Build Multi-Host Network (BMHN)
-
 
 # v1.4 Link
 https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html
 
-##1 Open a terminal
+#1 Open a terminal
 cd network/setup
 sudo chmod u+x *.sh
 
-##2 Install Pre-Requisites & Validate
+#2 Install Pre-Requisites & Validate
 ./install-prereqs.sh
 Log out & Log back in - type exit and enter
 ./validate-prereqs.sh
 
-##3 Install the Fabric binaries & images
+#3 Install the Fabric binaries & images
 sudo -E ./install-fabric.sh
 Log out & Log back in
 ./validate-fabric.sh
 
-##4 Install Hyperledger Explorer tool
+#4 Install Hyperledger Explorer tool
 sudo -E ./install-explorer.sh
 Log out & Log back in
 ./validate-explorer.sh
 
-##5 Install the Go Tools
+#5 Install the Go Tools
 ./install-gotools.sh
 
-##6 Install CA Server 
+#6 Install CA Server 
 ./install-caserver.sh
 Log out & Log back in
 ./validate-caserver.sh
 
-##7 Install Node JS - used by the utilities 
-## To use some of the utilities Node JS is needed
+#7 Install Node JS - used by the utilities 
+# To use some of the utilities Node JS is needed
 ./install-node-utils.sh
 
-## Update the sample code
+# Update the sample code
 cd network/setup
 ./update-git-repo.sh
 
-## Managing etc/hosts
+# Managing etc/hosts
 Update the etc/hosts
 sudo ./manage_hosts.sh
 cat /etc/hosts              << Shows the IP mapping for various components >>
-
-
-
-
-
-
